@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<builder-info>
+		<builder-name>CEDD</builder-name>
+		<index-folder>H:\Demo\index-CEDD</index-folder>
+	</builder-info>
+	
+	<builder-info>
+		<builder-name>FCTH</builder-name>
+		<index-folder>H:\Demo\index-FCTH</index-folder>
+	</builder-info>
+	
+	<builder-info>
+		<builder-name>Tamura</builder-name>
+		<index-folder>H:\Demo\index-Tamura</index-folder>
+	</builder-info>
+	
+</config>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <display-name></display-name>	
+  <welcome-file-list>
+    <welcome-file>home.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <context-param>
+  	<param-name>imgPath</param-name>
+  	<param-value>H:\\Demo\\img</param-value>
+  </context-param>
+  
+  <context-param>
+  	<param-name>uploadPath</param-name>
+  	<param-value>H:\\Demo\\uploadImg</param-value>
+  </context-param>
+  
+  <context-param>
+  	<param-name>tempPath</param-name>
+  	<param-value>H:\\Demo\\tempImg</param-value>
+  </context-param>
+  
+  <servlet>
+  	<servlet-name>indexServlet</servlet-name>
+  	<servlet-class>com.hbd.retrieval.index.servlet.IndexServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>indexServlet</servlet-name>
+  	<url-pattern>/servlet/indexServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>searchServlet</servlet-name>
+  	<servlet-class>com.hbd.retrieval.search.servlet.SearchServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>searchServlet</servlet-name>
+  	<url-pattern>/servlet/searchServlet</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
