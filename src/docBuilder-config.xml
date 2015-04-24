@@ -1,18 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
 	<builder-info>
-		<builder-name>CEDD</builder-name>
-		<index-folder>H:\Demo\index-CEDD</index-folder>
+		<builder-name>net.semanticmetadata.lire.imageanalysis.CEDD</builder-name>
+		<weight>0.9</weight>
 	</builder-info>
 	
 	<builder-info>
-		<builder-name>FCTH</builder-name>
-		<index-folder>H:\Demo\index-FCTH</index-folder>
+		<builder-name>net.semanticmetadata.lire.imageanalysis.FCTH</builder-name>
+		<weight>1.0</weight>
 	</builder-info>
 	
 	<builder-info>
-		<builder-name>Tamura</builder-name>
-		<index-folder>H:\Demo\index-Tamura</index-folder>
+		<builder-name>net.semanticmetadata.lire.imageanalysis.Tamura</builder-name>
+		<weight>1.0</weight>
 	</builder-info>
 	
+	<builder-info>
+		<builder-name>net.semanticmetadata.lire.imageanalysis.AutoColorCorrelogram</builder-name>
+		<weight>0.9</weight>
+	</builder-info>
+	
+	<builder-info>
+		<builder-name>net.semanticmetadata.lire.imageanalysis.FuzzyColorHistogram</builder-name>
+		<weight>1.0</weight>
+	</builder-info>
+	
+	<builder-info>
+		<builder-name>net.semanticmetadata.lire.imageanalysis.ColorLayout</builder-name>
+		<weight>1.0</weight>
+	</builder-info>
+	
+	<builder-info>
+		<builder-name>net.semanticmetadata.lire.imageanalysis.EdgeHistogram</builder-name>
+		<weight>1.0</weight>
+	</builder-info>
+	
+	<builder-info>
+		<builder-name>net.semanticmetadata.lire.imageanalysis.Gabor</builder-name>
+		<weight>1.0</weight>
+	</builder-info>
+	
+	<builder-info>
+		<builder-name>net.semanticmetadata.lire.imageanalysis.JCD</builder-name>
+		<weight>1.0</weight>
+	</builder-info>
+	
+	<builder-info>
+		<builder-name>net.semanticmetadata.lire.imageanalysis.JpegCoefficientHistogram</builder-name>
+		<weight>1.0</weight>
+	</builder-info>
+	
+	<builder-info>
+		<builder-name>net.semanticmetadata.lire.imageanalysis.OpponentHistogram</builder-name>
+		<weight>1.0</weight>
+	</builder-info>
+	
+	<builder-info>
+		<builder-name>net.semanticmetadata.lire.imageanalysis.LuminanceLayout</builder-name>
+		<weight>1.0</weight>
+	</builder-info>
+	
+	<builder-info>
+		<builder-name>net.semanticmetadata.lire.imageanalysis.PHOG</builder-name>
+		<weight>1.0</weight>
+	</builder-info>
+	
+	<builder-info>
+		<builder-name>net.semanticmetadata.lire.imageanalysis.ScalableColor</builder-name>
+		<weight>1.0</weight>
+	</builder-info>
 </config>

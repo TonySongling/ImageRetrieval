@@ -51,12 +51,11 @@ public class XmlConfigReader {
 				while(it_row.hasNext()){
 					Element el_ename = (Element) it_row.next();
 					String name = el_ename.getText();
-					if(!name.contains("index")){
+					if(name.length() > 3){
 						config.setBuilderName(name);
 					}else{
-						config.setIndexFolderName(name);
-					}
-					//System.out.println(el_ename.getText());
+						config.setWeight(Float.parseFloat(name));
+					}				
 				}
 				configList.add(config);
 			}

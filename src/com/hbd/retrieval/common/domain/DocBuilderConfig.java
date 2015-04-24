@@ -3,8 +3,8 @@ package com.hbd.retrieval.common.domain;
 public class DocBuilderConfig {
 	private String builderName;
 	
-	private String indexFolderName;
-
+	private float weight;
+	
 	public String getBuilderName() {
 		return builderName;
 	}
@@ -13,11 +13,12 @@ public class DocBuilderConfig {
 		this.builderName = builderName;
 	}
 
-	public String getIndexFolderName() {
-		return indexFolderName;
+	public float getWeight() {
+		return weight;
 	}
 
-	public void setIndexFolderName(String indexFolderName) {
-		this.indexFolderName = indexFolderName;
+	public void setWeight(float weight) {
+		this.weight = weight;
 	}
+
 }

@@ -1,9 +1,12 @@
-<%@ page language="java" import="java.util.*" pageEncoding="GB18030"%>
+<%@ page language="java" import="java.util.*" pageEncoding="GB18030"%> 
 <%
-String path = request.getContextPath();
-String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
-String srcPath = (String)request.getAttribute("src");
-%>
+ 	String path = request.getContextPath();
+ 	String basePath = request.getScheme() + "://"
+ 			+ request.getServerName() + ":" + request.getServerPort()
+ 			+ path + "/";
+ 	String srcPath = (String) request.getAttribute("srcPath");
+ 	String[] results = (String[])request.getAttribute("results");
+ %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
@@ -69,24 +72,25 @@ String srcPath = (String)request.getAttribute("src");
 
       <!-- Unnamed (Image) -->
       <div id="u3" class="ax_image">
-        <img alt="上传图像" src="<%=srcPath %>">
+      	<table>
+      		<tr>
+				<td>您上传的图片：</td> 
+				<td><img alt="上传图像" src="<%=basePath%><%=srcPath%>"></td>     		
+      		</tr>
+      		<tr>
+				<td>检索结果</td>
+				<td >结果图像</td>     		
+      		</tr>
+      		
+      		<%for(int i = 0; i<results.length; i++){ %>
+      		<tr>
+      			<td></td>
+      			<td><img alt="检索结果" src="<%=basePath%><%=results[i] %>"></td> 
+      		</tr>
+      		<%} %>
+      		
+      	</table>
       </div>
-
-      <!-- Unnamed (流程形状) -->
-      <div id="u5" class="ax_流程形状">
-        <img id="u5_img" class="img " src="images/page_1/u5.png"/>
-        <!-- Unnamed () -->
-        <div id="u6" class="text">
-          <p><span></span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Image) -->
-      <div id="u7" class="ax_image">
-        <img id="u7_img" class="img " src="images/page_1/u7.png"/>
-        <!-- Unnamed () -->
-      </div>
-
     </div>
   </body>
 </html>

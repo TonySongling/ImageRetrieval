@@ -11,19 +11,34 @@
   
   <context-param>
   	<param-name>imgPath</param-name>
-  	<param-value>H:\\Demo\\img</param-value>
+  	<param-value>\img</param-value>
+  </context-param>
+  
+  <context-param>
+  	<param-name>indexPath</param-name>
+  	<param-value>\index</param-value>
   </context-param>
   
   <context-param>
   	<param-name>uploadPath</param-name>
-  	<param-value>H:\\Demo\\uploadImg</param-value>
+  	<param-value>\uploadImg\</param-value>
   </context-param>
   
   <context-param>
   	<param-name>tempPath</param-name>
-  	<param-value>H:\\Demo\\tempImg</param-value>
+  	<param-value>\tempImg\</param-value>
   </context-param>
   
+  <servlet>
+		<servlet-name>InitServlet</servlet-name>
+		<servlet-class>com.hbd.retrieval.common.servlet.InitServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>	
+	<servlet-mapping>
+		<servlet-name>InitServlet</servlet-name>
+		<url-pattern>/servlet/InitServlett</url-pattern>
+	</servlet-mapping>
+	
   <servlet>
   	<servlet-name>indexServlet</servlet-name>
   	<servlet-class>com.hbd.retrieval.index.servlet.IndexServlet</servlet-class>
